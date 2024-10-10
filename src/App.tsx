@@ -1,7 +1,13 @@
-import "./styles/App.css";
+import About from "./components/application/about/About";
+import Navbar from "./components/application/navbar/Navbar";
 
 function App() {
-    return <main>teste 123..</main>;
+    return (
+        <main className="mx-8 my-8 bg-black">
+            <Navbar />
+            <About />
+        </main>
+    );
 }
 
 export default App;
