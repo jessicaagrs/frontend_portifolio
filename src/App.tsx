@@ -1,4 +1,5 @@
 import About from "./components/application/about/About";
+import Contact from "./components/application/contact/Contact";
 import Navbar from "./components/application/navbar/Navbar";
 import Projects from "./components/application/projects/Projects";
 
@@ -8,6 +9,7 @@ function App() {
             <Navbar />
             <About />
             <Projects />
+            <Contact />
         </main>
     );
 }
