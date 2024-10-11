@@ -1,5 +1,8 @@
+import { id } from "date-fns/locale";
+
 const PROJECTS = [
     {
+        id: 1,
         name: "Cadastro de Pacientes",
         photo: "https://uploaddeimagens.com.br/images/004/854/699/original/Screenshot_1.png?1728583844",
         linkSite: "https://jessicaagrs.github.io/frontend_projetoCadastroPacientes/",
@@ -11,6 +14,7 @@ const PROJECTS = [
         ],
     },
     {
+        id: 2,
         name: "Site Compra de Pizzas",
         photo: "https://uploaddeimagens.com.br/images/004/854/700/full/compra-pizzas.png?1728583871",
         linkSite: "https://jessicaagrs.github.io/frontend_projetoCompraDePizza/",
@@ -22,6 +26,7 @@ const PROJECTS = [
         ],
     },
     {
+        id: 3,
         name: "Gerador de Senhas",
         photo: "https://uploaddeimagens.com.br/images/004/854/703/full/gerador-senhas.png?1728583981",
         linkSite: "https://jessicaagrs.github.io/frontend_projetoSistemaSenhas/",
@@ -33,6 +38,7 @@ const PROJECTS = [
         ],
     },
     {
+        id: 4,
         name: "Api Controle Financeiro",
         photo: "https://uploaddeimagens.com.br/images/004/854/719/full/api-controle-financeiro.png?1728585267",
         linkSite: "",
@@ -45,6 +51,7 @@ const PROJECTS = [
         ],
     },
     {
+        id: 5,
         name: "Api Delivery",
         photo: "https://uploaddeimagens.com.br/images/004/854/704/full/api-delivery.png?1728584009",
         linkSite: "https://backend-api-delivery.vercel.app/static/index.html",
