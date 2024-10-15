@@ -8,12 +8,12 @@ export default function About() {
 
     return (
         <section
-            className="flex flex-col gap-40 min-h-screen"
+            className="flex flex-col min-h-screen"
             id="sectionAbout"
         >
             <Navbar />
             <div
-                className={`flex md:items-center md:justify-around  ${
+                className={`flex items-center justify-around flex-1  ${
                     inView ? "opacity-100 blur-none translate-x-0" : "opacity-0 blur-sm translate-x-[-100%]"
                 } transform transition-all duration-1000`}
                 ref={ref}
@@ -35,7 +35,7 @@ export default function About() {
                 </div>
 
                 <img
-                    src="src/assets/images/about-image.png"
+                    src="/about-image.png"
                     alt="imagem abstrata e notebook"
                     className="w-2/6 max-w-md hidden md:block"
                 />

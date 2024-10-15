@@ -1,5 +1,3 @@
-import { id } from "date-fns/locale";
-
 const PROJECTS = [
     {
         id: 1,
