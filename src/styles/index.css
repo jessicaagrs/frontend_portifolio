@@ -68,5 +68,8 @@
         color: var(--color-text);
         font-family: var(--font-text);
         overflow-x: hidden;
+        background-image: url("/bcg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }

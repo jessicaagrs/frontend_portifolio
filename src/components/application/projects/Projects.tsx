@@ -15,7 +15,7 @@ export default function Projects() {
             id="sectionProject"
         >
             <h1 className="md:text-4xl text-2xl text-center mt-8">
-                Alguns <span className="font-bold text-green-500">projetos</span> desenvolvidos
+                <span className="font-bold text-green-500">Projetos</span> desenvolvidos
             </h1>
             <Slide />
         </section>

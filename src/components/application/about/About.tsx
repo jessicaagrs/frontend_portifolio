@@ -13,7 +13,7 @@ export default function About() {
         >
             <Navbar />
             <div
-                className={`flex items-center justify-around flex-1  ${
+                className={`flex items-center gap-32 flex-col md:flex-row md:justify-around md:gap-0 md:mt-36 ${
                     inView ? "opacity-100 blur-none translate-x-0" : "opacity-0 blur-sm translate-x-[-100%]"
                 } transform transition-all duration-1000`}
                 ref={ref}
@@ -22,7 +22,7 @@ export default function About() {
                     <h1 className="text-2xl md:text-4xl mb-8 text-center">
                         Desenvolvedora <span className="font-bold text-green-500">Web</span>
                     </h1>
-                    <p className="indent-8 text-justify text-sm md:text-base">
+                    <p className="indent-8 text-sm md:text-base">
                         Olá! Sou desenvolvedora com foco em web, há mais de dois anos. Atuei em grandes empresas do ramo
                         e em segmentos diversos, como soluções ERP, mobile e web. Nesse período tive a oportunidade
                         atuar sempre como full stack, com diversas tecnologias como Javascript, Typescript, NodeJS, C#,
@@ -35,9 +35,9 @@ export default function About() {
                 </div>
 
                 <img
-                    src="/about-image.png"
-                    alt="imagem abstrata e notebook"
-                    className="w-2/6 max-w-md hidden md:block"
+                    src="/about-image.jpg"
+                    alt="foto da desenvolvedora"
+                    className="w-2/6 mt-24 max-w-md order-first rounded-full border-4 border-green-500 md:order-last md:block md:mt-0"
                 />
             </div>
         </section>
