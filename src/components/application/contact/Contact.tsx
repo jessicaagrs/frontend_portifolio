@@ -16,7 +16,7 @@ export default function Contact() {
             id="sectionContact"
         >
             <div className="flex flex-col items-center gap-24 w-full">
-                <h1 className="text-4xl mt-8">
+                <h1 className="md:text-4xl text-3xl mt-8">
                     Entre em <span className="font-bold text-green-500">contato</span>
                 </h1>
                 <FormContact />

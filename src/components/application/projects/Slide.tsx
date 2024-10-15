@@ -26,18 +26,18 @@ const Slide = () => {
                         <div className="p-1">
                             <Card className=" bg-black text-white border-slate-600">
                                 <CardContent className="flex flex-col aspect-square items-center justify-center p-8 gap-8">
-                                    <h1 className="text-3xl font-medium">{project.name}</h1>
+                                    <h1 className="md:text-3xl text-xl text-center font-medium">{project.name}</h1>
                                     <img
                                         src={project.photo}
                                         alt={project.name}
-                                        className="rounded-md max-w-lg"
+                                        className="rounded-md md:max-w-lg"
                                     />
-                                    <div className="flex w-full justify-center items-center gap-8">
+                                    <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
                                         <a
                                             href={project.linkCode}
                                             target="_blank"
                                         >
-                                            <button className="rounded-md w-28 h-10 bg-lime-900 hover:bg-slate-600">
+                                            <button className="rounded-md text-xs w-20 h-8 md:text-base md:w-28 md:h-10 bg-lime-900 hover:bg-slate-600">
                                                 Código
                                             </button>
                                         </a>
@@ -45,7 +45,14 @@ const Slide = () => {
                                             href={project.linkSite}
                                             target="_blank"
                                         >
-                                            <button className={project.linkSite ? `rounded-md w-28 h-10 bg-lime-900 hover:bg-slate-600` : `rounded-md w-28 h-10 bg-slate-600`} disabled={!project.linkSite}>
+                                            <button
+                                                className={
+                                                    project.linkSite
+                                                        ? `rounded-md text-xs w-20 h-8 md:text-base md:w-28 md:h-10 bg-lime-900 hover:bg-slate-600`
+                                                        : `rounded-md text-xs w-20 h-8 md:text-base md:w-28 md:h-10 bg-slate-600`
+                                                }
+                                                disabled={!project.linkSite}
+                                            >
                                                 Site
                                             </button>
                                         </a>

@@ -8,21 +8,21 @@ export default function About() {
 
     return (
         <section
-            className="flex flex-col gap-24 min-h-screen"
+            className="flex flex-col gap-40 min-h-screen"
             id="sectionAbout"
         >
             <Navbar />
             <div
-                className={`flex gap-8 items-center w-full mt-8 ${
+                className={`flex md:items-center md:justify-around  ${
                     inView ? "opacity-100 blur-none translate-x-0" : "opacity-0 blur-sm translate-x-[-100%]"
                 } transform transition-all duration-1000`}
                 ref={ref}
             >
-                <div className="w-2/4">
-                    <h1 className="text-4xl mb-8">
+                <div className="md:w-2/4">
+                    <h1 className="text-2xl md:text-4xl mb-8 text-center">
                         Desenvolvedora <span className="font-bold text-green-500">Web</span>
                     </h1>
-                    <p className="indent-8 text-justify text-base">
+                    <p className="indent-8 text-justify text-sm md:text-base">
                         Olá! Sou desenvolvedora com foco em web, há mais de dois anos. Atuei em grandes empresas do ramo
                         e em segmentos diversos, como soluções ERP, mobile e web. Nesse período tive a oportunidade
                         atuar sempre como full stack, com diversas tecnologias como Javascript, Typescript, NodeJS, C#,
@@ -34,13 +34,11 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className="w-2/4 flex justify-end">
-                    <img
-                        src="src/assets/images/about-image.png"
-                        alt="imagem abstrata e notebook"
-                        className="max-w-2xl"
-                    />
-                </div>
+                <img
+                    src="src/assets/images/about-image.png"
+                    alt="imagem abstrata e notebook"
+                    className="w-2/6 max-w-md hidden md:block"
+                />
             </div>
         </section>
     );
