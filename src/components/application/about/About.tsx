@@ -7,7 +7,10 @@ export default function About() {
     });
 
     return (
-        <section className="flex flex-col gap-24 min-h-screen">
+        <section
+            className="flex flex-col gap-24 min-h-screen"
+            id="sectionAbout"
+        >
             <Navbar />
             <div
                 className={`flex gap-8 items-center w-full mt-8 ${

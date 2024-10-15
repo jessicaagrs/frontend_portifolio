@@ -13,6 +13,7 @@ export default function Contact() {
                 inView ? "opacity-100 blur-none translate-x-0" : "opacity-0 blur-sm translate-x-[-100%]"
             } transform transition-all duration-1000`}
             ref={ref}
+            id="sectionContact"
         >
             <div className="flex flex-col items-center gap-24 w-full">
                 <h1 className="text-4xl mt-8">
