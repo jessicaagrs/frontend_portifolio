@@ -9,7 +9,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="font-bold text-green-500 ml-2"
             >
-                @JESSICAAGRS &#169; 2024
+                JESSICAAGRS &#169; 2024
             </a>
         </footer>
     );

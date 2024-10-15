@@ -27,7 +27,10 @@ export function FormContact() {
     });
 
     const onSubmit: SubmitHandler<FormSchema> = data => {
-        console.log(data);
+        const messageFormatted = data.message.replace(/ /g, "%20");
+        const url = `https://wa.me//5551994252048?text=Olá%20meu%20nome%20é%20${data.username}!%20 ${messageFormatted}`;
+        window.open(url, "_blank");
+        form.reset();
     };
 
     return (
@@ -69,7 +72,12 @@ export function FormContact() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className=" bg-lime-900 hover:bg-slate-600">Enviar</Button>
+                <Button
+                    type="submit"
+                    className=" bg-lime-900 hover:bg-slate-600"
+                >
+                    Enviar
+                </Button>
             </form>
         </Form>
     );
